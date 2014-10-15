@@ -4,7 +4,7 @@ Getting-and-cleaning-data
 Repository contains my submission for the assignment of the Coursera Getting and Cleaning Data course.
 
 ##Background
-The purpose of this project is to demonstrate your ability to collect, work with, and clean a data set. The goal is to prepare tidy data that can be used for later analysis. 
+Task: The purpose of this project is to demonstrate your ability to collect, work with, and clean a data set. The goal is to prepare tidy data that can be used for later analysis. 
 
 Deliverables: 
 * a tidy data set as described below, 
