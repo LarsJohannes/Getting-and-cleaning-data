@@ -44,6 +44,8 @@ Contains:
   * Direction relative to device denoted as X, Y and Z axes
 * For each combination of ID and activity, the average of observations was calculated for all variables.
 
+Please refer to complete list of column names at the end of the codebook.
+
 ##Data processing steps
 
 ### Load relevant data
@@ -83,7 +85,7 @@ Steps:
 * Save the file as tidydata.txt
 
 
-## List of columns
+## List of columns in final data set
  [1] "SubjectID"                                                             
  [2] "Activity"                                                              
  [3] "Time Body Acceleration -Mean -X"                                       
