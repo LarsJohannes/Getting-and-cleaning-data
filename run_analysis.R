@@ -36,18 +36,18 @@ df <- df[,c(1,2,89,3:88)]
 ## Rename columns based on sub-strings 
 colnames <- colnames(df)
 for (i in 1:ncol(df)) {
-        colnames[i] = gsub("\\()", "", colnames[i])
-        colnames[i] = gsub("^[t]", "Time ", colnames[i])
-        colnames[i] = gsub("^[f]", "Frequency ", colnames[i])
-        colnames[i] = gsub("mean()", "Mean ", colnames[i])
-        colnames[i] = gsub("std()", "Stdandard Deviation ", colnames[i])
-        colnames[i] = gsub("([Gg]ravity)","Gravity ",colnames[i])
-        colnames[i] = gsub("([Bb]ody[Bb]ody|[Bb]ody)","Body ",colnames[i])
-        colnames[i] = gsub("[Gg]yro","Gyro ",colnames[i])
-        colnames[i] = gsub("[Aa]cc","Acceleration ",colnames[i])
-        colnames[i] = gsub("[Mm]ag","Magnitude ",colnames[i])
-        colnames[i] = gsub("JerkMag","Jerk magnitude",colnames[i])
-        colnames[i] = gsub("GyroMag","Gyro magnitude",colnames[i])
+     colnames[i] = gsub("\\()", "", colnames[i])
+     colnames[i] = gsub("^[t]", "Time ", colnames[i])
+     colnames[i] = gsub("^[f]", "Frequency ", colnames[i])
+     colnames[i] = gsub("mean()", "Mean ", colnames[i])
+     colnames[i] = gsub("std()", "Standard Deviation ", colnames[i])
+     colnames[i] = gsub("([Gg]ravity)","Gravity ",colnames[i])
+     colnames[i] = gsub("([Bb]ody[Bb]ody|[Bb]ody)","Body ",colnames[i])
+     colnames[i] = gsub("[Gg]yro","Gyro ",colnames[i])
+     colnames[i] = gsub("[Aa]cc","Acceleration ",colnames[i])
+     colnames[i] = gsub("[Mm]ag","Magnitude ",colnames[i])
+     colnames[i] = gsub("JerkMag","Jerk magnitude",colnames[i])
+     colnames[i] = gsub("GyroMag","Gyro magnitude",colnames[i])
 }
 
 colnames(df) = colnames
@@ -74,5 +74,4 @@ final.data <- arrange(final.data, SubjectID, Activity)
 
 ## write the final table
 write.table(final.data, "tidydata.txt", row.name=FALSE)
-
 
